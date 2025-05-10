@@ -1,0 +1,147 @@
+/* Main Background with Food Image */
+body {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Main App Container */
+.App {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Recipe Manager Title */
+h1 {
+  color: #2e7d32;
+  font-size: 2.8rem;
+  margin: 0 0 20px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* Buttons and Links */
+a, button {
+  text-decoration: none;
+  color: white;
+  background-color: #4caf50;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+a:hover, button:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe List Header */
+.recipe-list-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.recipe-list-header h2 {
+  color: #2e7d32;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Recipe Cards */
+.recipe-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Empty State */
+.no-recipes {
+  text-align: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.no-recipes p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,99 @@
+.recipe-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  color: #2d3436;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #636e72;
+  font-size: 1rem;
+}
+
+.recipe-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2d3436;
+  font-size: 0.95rem;
+}
+
+input, textarea {
+  width: 100%;
+  color: #2d3436;
+  padding: 12px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+input:focus, textarea:focus {
+  border-color: #00b894;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 184, 148, 0.1);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.hint {
+  display: block;
+  margin-top: 0.25rem;
+  color: #636e72;
+  font-size: 0.85rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #00997b;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #b2bec3;
+  cursor: not-allowed;
+  transform: none;
+}

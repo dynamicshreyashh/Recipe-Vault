@@ -1,2 +1,8 @@
-# Recipe-Vault
-Recipe Vault is a full-stack MERN web application designed for storing and managing cooking recipes, featuring recipe creation, editing, and deletion with details like ingredients and instructions, along with search functionality.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
